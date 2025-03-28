@@ -1,1 +1,91 @@
-<p>navbar works!</p>
+<!--
+navbar -> container -> logo-container + navmenu-container + features-container + menu__toggler
+top-navbar -> container -> logo + features + menu__toggler
+-->
+
+<div class="app__top-navbar">
+  <div class="container">
+    <div class="navbar__toggler" (click)="ActiveMobileMenu()">
+      <i class="bx bx-menu-alt-left"></i>
+    </div>
+    <div class="navbar__logo">
+      <img src="images/furniro-logo.png" alt="" srcset="" />
+      <p>furniro.</p>
+    </div>
+    <nav>
+      <div class="navbar__features">
+        <div class="navbar__feature-search">
+          <div class="search__bar">
+            <div class="search__icon">
+              <i class="bx bx-search"></i>
+            </div>
+            <div class="search__input">
+              <form>
+                <input type="text" placeholder="search by keyword..." />
+              </form>
+            </div>
+          </div>
+          <div class="search__result"></div>
+        </div>
+        <div class="navbar__feature-wishlist">
+          <i class="bx bx-heart"></i>
+          <div class="wishlist__alert"></div>
+        </div>
+        <div class="navbar__feature-cart">
+          <i class="bx bx-cart"></i>
+          <div class="cart__alert">0</div>
+        </div>
+        <div class="navbar__feature-user">
+          <i class="bx bx-user"></i>
+        </div>
+      </div>
+    </nav>
+@if(isActive){
+  <ul class="navbar__menu-mobile">
+    <li class="navbar__mobile-item">
+      <a href="">Home</a>
+      </li>
+      <li class="navbar__mobile-item">
+        <a href="">About</a>
+      </li>
+      <li class="navbar__mobile-item">
+        <a href="">Contact</a>
+      </li>
+      <li class="navbar__mobile-item">
+        <a href="">Shop</a>
+      </li>
+      <li class="navbar__mobile-item">
+        <a href="">Blog</a>
+      </li>
+      <li class="navbar__mobile-item">
+        <a href="">Categories</a>
+      </li>
+    </ul>
+  }
+  </div>
+</div>
+
+<div class="app__bottom-navbar">
+  <div class="container">
+    <ul class="navbar__menu">
+      <li class="navbar__menu-item">
+        <a href="">Home</a>
+      </li>
+      <li class="navbar__menu-item">
+        <a href="">About</a>
+      </li>
+      <li class="navbar__menu-item">
+        <a href="">Contact</a>
+      </li>
+      <li class="navbar__menu-item">
+        <a href="">Shop</a>
+      </li>
+      <li class="navbar__menu-item">
+        <a href="">Blog</a>
+      </li>
+      <li class="navbar__menu-item">
+        <a href="">Categories</a>
+      </li>
+    </ul>
+  </div>
+</div>
