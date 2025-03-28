@@ -8,5 +8,17 @@ import { Component } from '@angular/core';
   styleUrl: './navbar.component.css'
 })
 export class NavbarComponent {
+isActive : boolean;
+constructor(){
+  this.isActive = false;
+}
 
+ActiveMobileMenu(){
+  if(!this.isActive){
+    this.isActive = true;
+  }
+  else {
+    this.isActive = false
+  }
+}
 }
