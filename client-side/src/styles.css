@@ -1,6 +1,6 @@
 /* google fonts */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap");
 
 * {
   padding: 0;
@@ -9,37 +9,61 @@
 }
 html {
   scroll-behavior: smooth;
-  font-family: "Poppins", sans-serif;
+  /* font-family: "Poppins", sans-serif; */
+  font-family: "Comfortaa", sans-serif;
 }
-body {
-  background-color: red;
+.section {
+  padding: 3rem 0;
+}
+.section__title {
+  display: flex;
+  gap:5px;
+  align-items: center;
+}
+.section__title h2 {
+  font-size: var(--font-size-heading-2);
+  width: fit-content;
+}
+.section__title span {
+  border-radius: 8px;
+  width: 30px;
+  height: 50px;
+  background: hsla(43, 93%, 51%, 1);
+
+  background: linear-gradient(135deg, hsla(43, 93%, 51%, 1) 0%, hsla(340, 47%, 77%, 1) 100%);
+
+  background: -moz-linear-gradient(135deg, hsla(43, 93%, 51%, 1) 0%, hsla(340, 47%, 77%, 1) 100%);
+
+  background: -webkit-linear-gradient(135deg, hsla(43, 93%, 51%, 1) 0%, hsla(340, 47%, 77%, 1) 100%);
+
+  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#F6B40E", endColorstr="#E0A9BB", GradientType=1 );
 }
 :root {
-/* colors */
---primary-color : #f6b40e;
-/* fonts sizes */
---font-size-p : 1rem;
---font-size-heading-1 : 3rem;
---font-size-heading-2 : 2.5rem;
---font-size-heading-3 : 2rem;
---font-size-heading-4 : 1.5rem;
---font-size-heading-5 : 1rem;
-/* font-weights */
---font-bold : 800;
---font-semi-bold :600 ;
---font-light :300 ;
---font-normal :500 ;
-/* container widthes */
---container-width : 1140px;
---container-width-lg :960px;
---container-width-md :720px;
---container-width-sm :540px;
---container-width-xsm :100%;
+  /* colors */
+  --primary-color: #f6b40e;
+  /* fonts sizes */
+  --font-size-p: 1rem;
+  --font-size-heading-1: 3rem;
+  --font-size-heading-2: 2rem;
+  --font-size-heading-3: 1.5rem;
+  --font-size-heading-4: 1rem;
+  --font-size-heading-5: 0.5rem;
+  /* font-weights */
+  --font-bold: 800;
+  --font-semi-bold: 600;
+  --font-light: 300;
+  --font-normal: 500;
+  /* container widthes */
+  --container-width: 1140px;
+  --container-width-lg: 960px;
+  --container-width-md: 720px;
+  --container-width-sm: 540px;
+  --container-width-xsm: 100%;
 }
 .container {
   max-width: var(--container-width);
   margin-inline: auto;
-  padding: 0 15px ;
+  padding: 0 15px;
 }
 ul {
   list-style: none;
@@ -49,19 +73,19 @@ a {
   color: black;
 }
 /* large screens */
-@media screen and (max-width : 992px)  {
+@media screen and (max-width: 992px) {
   .container {
     max-width: var(--container-width-lg);
   }
 }
 /* meduim screens */
-@media screen and (max-width : 768px) {
-.container {
-  max-width: var(--container-width-md);
-}
+@media screen and (max-width: 768px) {
+  .container {
+    max-width: var(--container-width-md);
+  }
 }
 /* small screens */
-@media screen and (max-width:576px) {
+@media screen and (max-width: 576px) {
   .container {
     max-width: var(--container-width-sm);
   }
@@ -72,4 +96,3 @@ a {
     max-width: var(--container-width-xsm);
   }
 }
-
