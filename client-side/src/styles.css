@@ -10,37 +10,16 @@
 html {
   scroll-behavior: smooth;
   /* font-family: "Poppins", sans-serif; */
-  font-family: "Comfortaa", sans-serif;
+  font-family:var(--font-family)
 }
 .section {
   padding: 3rem 0;
 }
-.section__title {
-  display: flex;
-  gap:5px;
-  align-items: center;
-}
-.section__title h2 {
-  font-size: var(--font-size-heading-2);
-  width: fit-content;
-}
-.section__title span {
-  border-radius: 8px;
-  width: 30px;
-  height: 50px;
-  background: hsla(43, 93%, 51%, 1);
 
-  background: linear-gradient(135deg, hsla(43, 93%, 51%, 1) 0%, hsla(340, 47%, 77%, 1) 100%);
-
-  background: -moz-linear-gradient(135deg, hsla(43, 93%, 51%, 1) 0%, hsla(340, 47%, 77%, 1) 100%);
-
-  background: -webkit-linear-gradient(135deg, hsla(43, 93%, 51%, 1) 0%, hsla(340, 47%, 77%, 1) 100%);
-
-  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#F6B40E", endColorstr="#E0A9BB", GradientType=1 );
-}
 :root {
   /* colors */
   --primary-color: #f6b40e;
+  --secondry-color : #133A5E;
   /* fonts sizes */
   --font-size-p: 1rem;
   --font-size-heading-1: 3rem;
@@ -53,6 +32,8 @@ html {
   --font-semi-bold: 600;
   --font-light: 300;
   --font-normal: 500;
+  /* font family */
+  --font-family :  "Comfortaa", sans-serif;
   /* container widthes */
   --container-width: 1140px;
   --container-width-lg: 960px;

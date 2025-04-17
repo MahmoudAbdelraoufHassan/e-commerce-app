@@ -32,18 +32,84 @@ top-navbar -> container -> logo + features + menu__toggler
           <div class="wishlist__alert"></div>
         </div>
         <div class="navbar__feature-cart">
-          <i class="bx bx-cart"></i>
+          <i class="bx bx-cart" (click)="activeCartDropdown()"></i>
           <div class="cart__alert">0</div>
+          <div class="cart__dropdown" [ngClass]="cartDropdown ? 'showMenu' : 'hideMenu'">
+            <div class="cart__dropdown-container">
+              <div class="cart__box">
+                <div class="cart__box-img">
+                  <img src="images/product.jpg" alt="" srcset="">
+                </div>
+                <div class="cart__box-details">
+                  <h3>Cozy Corner Sectional</h3>
+                </div>
+              </div>
+              <div class="cart__box">
+                <div class="cart__box-img">
+                  <img src="images/product.jpg" alt="" srcset="">
+                </div>
+                <div class="cart__box-details">
+                  <h3>Cozy Corner Sectional</h3>
+                </div>
+              </div>
+              <div class="cart__box">
+                <div class="cart__box-img">
+                  <img src="images/product.jpg" alt="" srcset="">
+                </div>
+                <div class="cart__box-details">
+                  <h3>Cozy Corner Sectional</h3>
+                </div>
+              </div>
+              <div class="cart__box">
+                <div class="cart__box-img">
+                  <img src="images/product.jpg" alt="" srcset="">
+                </div>
+                <div class="cart__box-details">
+                  <h3>Cozy Corner Sectional</h3>
+                </div>
+              </div>
+              <div class="cart__box">
+                <div class="cart__box-img">
+                  <img src="images/product.jpg" alt="" srcset="">
+                </div>
+                <div class="cart__box-details">
+                  <h3>Cozy Corner Sectional</h3>
+                  <span>EGP 129.99</span>
+                  <div class="box__qyt">
+                    <i class='bx bx-minus'></i>
+                    <p>2</p>
+                    <i class='bx bx-plus'></i>
+                  </div>
+                </div>
+              </div>
+              <div class="cart__box">
+                <div class="cart__box-img">
+                  <img src="images/product.jpg" alt="" srcset="">
+                </div>
+                <div class="cart__box-details">
+                  <h3>Cozy Corner Sectional</h3>
+                </div>
+              </div>
+            </div>
+            <button>View Cart</button>
+          </div>
         </div>
         <div class="navbar__feature-user">
-          <i class="bx bx-user"></i>
+          <i class="bx bx-user" (click)="activeUserDropdown()"></i>
+          <ul
+            class="user__dropdown"
+            [ngClass]="userDropdown ? 'showMenu' : 'hideMenu'"
+          >
+            <li><a href="">Login</a></li>
+            <li><a href="">Signup</a></li>
+          </ul>
         </div>
       </div>
     </nav>
-@if(isActive){
-  <ul class="navbar__menu-mobile">
-    <li class="navbar__mobile-item">
-      <a href="">Home</a>
+    @if(isActive){
+    <ul class="navbar__menu-mobile">
+      <li class="navbar__mobile-item">
+        <a href="">Home</a>
       </li>
       <li class="navbar__mobile-item">
         <a href="">About</a>
@@ -61,7 +127,7 @@ top-navbar -> container -> logo + features + menu__toggler
         <a href="">Categories</a>
       </li>
     </ul>
-  }
+    }
   </div>
 </div>
 

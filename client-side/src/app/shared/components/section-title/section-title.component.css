@@ -1,0 +1,34 @@
+.section__title {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  margin-bottom: 3rem;
+}
+.section__title h2 {
+  font-size: 20px;
+  width: fit-content;
+}
+.section__title span {
+  border-radius: 8px;
+  width: 30px;
+  height: 50px;
+  background: hsla(43, 93%, 51%, 1);
+
+  background: linear-gradient(
+    135deg,
+    hsla(43, 93%, 51%, 1) 0%,
+    hsla(340, 47%, 77%, 1) 100%
+  );
+
+  background: -moz-linear-gradient(
+    135deg,
+    hsla(43, 93%, 51%, 1) 0%,
+    hsla(340, 47%, 77%, 1) 100%
+  );
+
+  background: -webkit-linear-gradient(
+    135deg,
+    hsla(43, 93%, 51%, 1) 0%,
+    hsla(340, 47%, 77%, 1) 100%
+  );
+}

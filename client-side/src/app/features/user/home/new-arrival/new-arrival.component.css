@@ -1,0 +1,4 @@
+.products__contianer {
+  display: flex;
+  gap: 20px;
+}

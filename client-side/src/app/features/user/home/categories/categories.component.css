@@ -27,6 +27,7 @@
   align-items: center;
   border-radius: 50%;
   position: relative;
+  transition: 0.3s;
 }
 .category__box-img::before {
   content: "";
@@ -43,10 +44,13 @@
   opacity: 0;
   /* animation: name duration timing-function delay iteration-count direction fill-mode; */
 }
-.category__box:hover .category__box-img::before {
+/* .category__box:hover .category__box-img::before {
   animation: rotate 1s infinite linear;
   opacity: 1;
-}
+} */
+ .category__box-img:hover {
+background-color: var(--primary-color);
+ }
 .category__box-title {
   font-weight: var(--font-normal);
   margin-top: 30px;

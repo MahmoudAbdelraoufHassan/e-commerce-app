@@ -1,7 +1,7 @@
 .app__landing {
-  margin: 10px;
+  /* margin: 10px; */
   margin-top: 0;
-  border-radius: 8px;
+  /* border-radius: 8px; */
   overflow: hidden;
 }
 .container {
@@ -32,8 +32,8 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  height: calc(100vh - 150px);
-  border-radius: 10px;
+  height: calc(100vh - 140px);
+  /* border-radius: 10px; */
   position: relative;
   z-index: 2;
 }
