@@ -1,0 +1,25 @@
+.offers__timer {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.offers__timer  > span{
+font-size: 25px;
+color: var(--primary-color);
+}
+.offers__timer-box {
+  width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  flex-direction: column;
+  border-radius: 8px;
+
+color: var(--secondry-color);
+}
+.offers__timer-box p {
+  font-size: 30px;
+}
+
