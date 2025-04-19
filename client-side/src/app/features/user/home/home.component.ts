@@ -6,6 +6,7 @@ import { NewArrivalComponent } from './new-arrival/new-arrival.component';
 import { FlashSalesComponent } from './flash-sales/flash-sales.component';
 import { OffersComponent } from './offers/offers.component';
 import { ServicesComponent } from "./services/services.component";
+import { CompaniesComponent } from './companies/companies.component';
 
 @Component({
   selector: 'app-home',
@@ -17,7 +18,8 @@ import { ServicesComponent } from "./services/services.component";
     NewArrivalComponent,
     FlashSalesComponent,
     OffersComponent,
-    ServicesComponent
+    ServicesComponent,
+    CompaniesComponent
 ],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css',
